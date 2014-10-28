@@ -1,0 +1,43 @@
+body{
+  background-color: #eee !important;
+}
+
+#banner-container{
+  background-image:url(http://www.hcpress.com/img/ELECTION-2014-banner10.jpg);
+  height: 150px;
+  /*font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: white;
+  decoration: none;*/
+}
+
+a{
+  color: black;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container_style_02{
+  border: 1px solid #ddd;
+  background-color: #fff;
+  padding: 50px 30px 25px 30px;
+  position: relative;
+}
+.img-responsive {
+    display: block;
+    /*max-height: 35%;
+    max-width: 35%;*/
+    float: left;
+}
+
+.img-candidate{
+
+  width:435px ;
+  height:465px ;
+  padding: 12 px;
+  float: left;
+}
