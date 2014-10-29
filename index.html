@@ -1,11 +1,11 @@
-<!--Author: Rakshit & Li-Wei Tseng-->
+<!--Author: Rakshit Garg & Li-Wei Tseng-->
 <!DOCTYPE HTML>
 <html>
   <head>
      <meta charset="utf-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <link href="election.css" rel="stylesheet">
+    <link href="css/election.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -15,7 +15,9 @@
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://voter-info-tool.appspot.com/js/loader.js"></script>
 
+    <script type="text/javascript" src="https://voter-info-tool.appspot.com/js/loader.js"></script>
     <title>Elections 2014 | Daily Bruin</title>
   </head>
   <body>
@@ -31,6 +33,10 @@
 
     <!-- <img title="Election Day Banner Placeholder Image" src="http://placekitten.com/1920/200"/>
     -->
+
+<!-- <div id="_vit"></div>
+<script type="text/javascript">vit.load();</script> -->
+
 
     <div id="banner-back">
 		<a href="index.html"><div class="container" id="banner-container">
@@ -60,25 +66,28 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
+    <!-- Tentative Tabs: Congress, State Senate, LA County Supervisor, Propositions, Results, Where to Vote-->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">GOVERNOR</a></li>
-        <li><a href="#">HOUSE</a></li>
-        <li><a href="#">STATE LEGISLATURE</a></li>
-        <li style="border-left: solid #aaa"><a href="#">ENDORSEMENT</a></li>
-        <li><a href="#">RESULT</a></li>
+        <li><a href="#">CONGRESS</a></li>
+        <li><a href="#">STATE SENATE</a></li>
+        <li><a href="#">LA COUNTY SUPERVISOR</a></li>
+        <!-- REMINDER THAT WE NEED TO ADD A DIVISOR BETWEEN TABS AND POSSIBLY REARRANGE THEM -->
+        <!-- style="border-left: solid #aaa"><a href="#">LA COUNTY SUPERVISOR</a></li> -->
+        <li><a href="#">PROPOSITIONS</a></li>
+        <!-- <li><a href="#">RESULTS</a></li> -->
+        <li><a href="#">WHERE TO VOTE</a></li>
       </ul>
-      <form class="navbar-form navbar-right" role="search">
+      <!-- <form class="navbar-form navbar-right" role="search">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search">
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
-      </form>
+      </form> -->
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-
-
 
 
 <div class="row" style="position:relative;">
@@ -107,7 +116,7 @@
                   <td class="table_right_title">Education</td>
                   <td colspan="3">UCLA</td>
                 </tr>
-                <tr>
+                <!-- <tr>
                   <td class="table_right_title">Experience</td>
                   <td colspan="3">Go Bruins!<br>
                 </tr>
@@ -125,7 +134,7 @@
                   <td colspan="3">---<br>&nbsp;
                     <br>&nbsp;
                     <br>&nbsp;</td>
-                </tr>
+                </tr> -->
               </tbody></table>
                   </div>
         </div>
@@ -140,44 +149,74 @@
 
                   <div>
                     <table class="table table-striped">
-                <tbody><tr>
-                  <td width="16%" class="table_right_title">Party</td>
-                  <td>Daily Bruin</td>
-                  <td width="16%" class="table_right_title">age</td>
-                  <td>77</td>
-                </tr>
-                <tr>
-                  <td class="table_right_title">Platform</td>
-                  <td colspan="3">---</td>
-                </tr>
-                <tr>
-                  <td class="table_right_title">Education</td>
-                  <td colspan="3">UCLA</td>
-                </tr>
-                <tr>
-                  <td class="table_right_title">Experience</td>
-                  <td colspan="3">Go Bruins!<br>
-                </tr>
-                <tr>
-                  <td class="table_right_title">Family</td>
-                  <td colspan="3">---<br>&nbsp;</td>
-                </tr>
-                <tr>
-                  <td class="table_right_title">Personality</td>
-                  <td colspan="3">---</td>
-                </tr>
-                <tr>
-                  <td class="table_right_title">Special<br>
-                    Experience</td>
-                  <td colspan="3">---<br>&nbsp;
-                    <br>&nbsp;
-                    <br>&nbsp;</td>
-                </tr>
-              </tbody></table>
-                  </div>
+                    <tbody><tr>
+                    <td width="16%" class="table_right_title">Party</td>
+                    <td>Daily Bruin</td>
+                    <td width="16%" class="table_right_title">age</td>
+                    <td>77</td>
+                    </tr>
+                    <tr>
+                      <td class="table_right_title">Platform</td>
+                      <td colspan="3">---</td>
+                    </tr>
+                    <tr>
+                      <td class="table_right_title">Education</td>
+                      <td colspan="3">UCLA</td>
+                    </tr>
+                    <!-- <tr>
+                      <td class="table_right_title">Experience</td>
+                      <td colspan="3">Go Bruins!<br>
+                    </tr>
+                    <tr>
+                      <td class="table_right_title">Family</td>
+                      <td colspan="3">---<br>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td class="table_right_title">Personality</td>
+                      <td colspan="3">---</td>
+                    </tr>
+                    <tr>
+                      <td class="table_right_title">Special<br>
+                        Experience</td>
+                      <td colspan="3">---<br>&nbsp;
+                        <br>&nbsp;
+                        <br>&nbsp;</td>
+                    </tr> -->
+                  </tbody></table>
+                </div>
+        </div> <!-- class="candidates_title" -->
+        </div> <!--class="thumbnail" -->
+      </div> <!-- class="col-xs-12 col-sm-12 col-md-6 col-lg-4" -->
+    </div>  <!--class="col-xs-12 col-sm-12 col-md-12 col-lg-12" -->
+      <div class="panel-group" id="accordion">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title" style="text-align:center">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+              More on News
+            </a>
+          </h4>
         </div>
+        <div id="collapseOne" class="panel-collapse collapse">
+          <div class="panel-body">
+            <a href="#">This are news links</a>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title" style="text-align:center">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+              More on Opinion
+            </a>
+          </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse">
+          <div class="panel-body">
+            <a href="#">This are opinions links</a>
+          </div>
+        </div>
+      </div>
+    </div> <!-- news collapse-->
+  </div> <!--class="container container_style_02"-->
+</div> <!--class="row" style="position:relative;" -->
